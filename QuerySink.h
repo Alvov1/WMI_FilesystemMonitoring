@@ -103,6 +103,5 @@ HRESULT QuerySink::SetStatus(
     /* [in] */ HRESULT hResult,
     /* [in] */ BSTR strParam,
     /* [in] */ IWbemClassObject __RPC_FAR* pObjParam) {
-    //printf("QuerySink::SetStatus hResult = 0x%X\n", hResult);
     return WBEM_S_NO_ERROR;
 }
