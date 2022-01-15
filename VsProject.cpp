@@ -136,12 +136,12 @@ int __cdecl main(int argc, char** argv) {
 
     hres = CoSetProxyBlanket(
         pSvc,
-        RPC_C_AUTHN_WINNT, //RPC_C_AUTHN_DEFAULT,
-        RPC_C_AUTHZ_NONE, //RPC_C_AUTHZ_DEFAULT,
-        nullptr, //COLE_DEFAULT_PRINCIPAL,
-        RPC_C_AUTHN_LEVEL_CALL, //RPC_C_AUTHN_LEVEL_PKT_PRIVACY,
+        RPC_C_AUTHN_WINNT,
+        RPC_C_AUTHZ_NONE,
+        nullptr,
+        RPC_C_AUTHN_LEVEL_CALL,
         RPC_C_IMP_LEVEL_IMPERSONATE,
-        nullptr, //userAcct,
+        nullptr,
         EOAC_NONE
     );
     if (FAILED(hres)) {
